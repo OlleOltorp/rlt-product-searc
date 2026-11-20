@@ -1,0 +1,16 @@
+CLAUDE.md
+AGENTS.md
+.claude/
+
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.ruff_cache/
+
+/data/
+/runs/
+
+.env
+.DS_Store
+.vscode/
