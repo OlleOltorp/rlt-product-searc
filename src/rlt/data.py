@@ -8,6 +8,16 @@ URL = f"https://raw.githubusercontent.com/wayfair/WANDS/{COMMIT}/dataset"
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 FILES = ["product", "query", "label"]
 GRADES = {"Exact": 2, "Partial": 1, "Irrelevant": 0}
+TEXTS = {
+    "title": ["product_name"],
+    "full": [
+        "product_name",
+        "product_class",
+        "category hierarchy",
+        "product_description",
+        "product_features",
+    ],
+}
 
 
 def download(data_dir=DATA_DIR):
